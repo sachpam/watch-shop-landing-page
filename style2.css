@@ -4,7 +4,7 @@
     font-family:'Josefin Sans', sans-serif ;
 }
 
-.new-arrivals{
+.new-arrivals, .popular, .choice , .checkout{
     margin: 200px 190px;
 }
 
@@ -38,11 +38,29 @@ h3{
     margin: 25px 0 12px 0;
 }
 
+h4{
+    color:#777777;
+    font-family:roboto, sans-serif;
+    text-align:center;
+    line-height: 30px;
+    font-weight: lighter;
+}
+
 h5{
     color: #ff2020;
     font-size: 18px;
     font-weight: 500px;
     text-align: center;
+}
+
+h6{
+    color:#ffffff;
+    font-family:roboto, sans-serif;
+    font-size:20px;
+    font-weight:700;
+    line-height:24px;
+    text-align:left;
+    margin-bottom: 20px;
 }
 
 .img-grid{
@@ -56,10 +74,28 @@ h5{
 
 .gallery-box{
     overflow: hidden;
+    /* z-index: 100; */
 }
-.gallery-box:hover{
+
+.overlay{
+    position: relative;
+    /* top: 0; */
+    background-color: black;
+    /* opacity: 0; */
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box:hover .overlay{
+    opacity: 0.5;
+}
+
+
+
+.gallery-box img:hover{
     -webkit-transform: scale(1); /* Safari 3-8 */
-    transform: scale(0.99); 
+    transform: scale(0.97); 
+    transition-duration: 1s;
 }
 
 .img1{
@@ -75,4 +111,65 @@ h5{
 
 .img4{
     grid-area: 2 / 4 / span 1/span 1 ;
+}
+
+.product-box{
+    height: 379px;
+    width: 360px;
+    overflow: hidden;
+    border-bottom: 3px solid #ff2020;
+}
+
+.product{
+    margin: 20px 0;
+}
+
+.popular h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a{
+    font-size: 16px;
+    text-decoration: none;
+    background-color:#ff2020;
+    color:#ffffff;
+    display:inline-block;
+    font-family:"josefin sans", sans-serif;
+    font-weight:600;
+    letter-spacing:0.48px;
+    text-align:center;
+    text-transform:uppercase;
+    padding: 30px 28px;
+}
+
+.choice{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:30px;
+}
+
+.choice .choice-txt h4, .checkout h4{
+    text-align: left !important;
+}
+
+.choice-txt a{
+    margin: 50px 0;
+}
+
+.checkout{
+    background-color: #ff2020;
+    color: #ffffff;
+    height: 243px;
+    padding: 20px 30px;
+    text-align: left !important;
+}
+
+.checkout h4{
+    color: #d3d1d1;
+}
+
+.checkout i{
+    font-size: 40px;
+    margin-bottom: 20px;
 }
