@@ -4,6 +4,45 @@
     font-family:'Josefin Sans', sans-serif ;
 }
 
+#navbar {
+    overflow: hidden;
+    background-color:white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 26px;
+  }
+
+  #navbar img{
+      width: 132px;
+      height: 29px;
+  }
+  #navbar i{
+      padding: 31px 19px;
+  }
+  
+#navbar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Josefin Sans",sans-serif;
+    color: #141517;
+    background: #ffffff;
+    font-weight: 600;
+    padding: 41px 21px;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+  }  
+
 .new-arrivals, .popular, .choice , .checkout, .footer{
     margin: 200px 190px;
 }

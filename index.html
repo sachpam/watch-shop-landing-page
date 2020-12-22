@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Watch Shop</title>
 </head>
 <body>
-    <nav></nav>
+        <div id="navbar">
+            <img src="images/logo2.jpg" alt="">
+            <div class="links">
+                <a href="javascript:void(0)">Home</a>
+                <a href="javascript:void(0)">Shop</a>
+                <a href="javascript:void(0)">About</a>
+                <a href="javascript:void(0)">News</a>
+                <a href="javascript:void(0)">Contact</a>
+            </div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="far fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            
+        </div>
     <div class="hero">
         <div class="hero-content">
             <div class="left">
@@ -198,5 +214,18 @@
             </div>
         </div>
     </div>
+    <script>
+        var myNav = $("#navbar");
+            $(window).on('scroll', function() {
+            "use strict";
+            if ($(window).scrollTop() >= 280) {
+                myNav.addClass("sticky");
+            } else {
+                myNav.removeClass("sticky");
+
+            }
+        });
+    </script>
+
 </body>
 </html>
