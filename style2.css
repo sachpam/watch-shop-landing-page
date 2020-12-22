@@ -4,7 +4,7 @@
     font-family:'Josefin Sans', sans-serif ;
 }
 
-.new-arrivals, .popular, .choice , .checkout{
+.new-arrivals, .popular, .choice , .checkout, .footer{
     margin: 200px 190px;
 }
 
@@ -172,4 +172,23 @@ a{
 .checkout i{
     font-size: 40px;
     margin-bottom: 20px;
+}
+
+.footer-row{
+    display: grid;
+    grid-template-columns: 25% auto auto auto;
+    grid-gap:33px;
+}
+
+.footer-col h4{
+    text-align: left !important;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col img{
+    width: 132px;
+    margin-bottom: 30px;
 }
