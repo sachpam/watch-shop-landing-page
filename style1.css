@@ -1,0 +1,63 @@
+.hero {
+  height: 100vh;
+  background-color: #f0f0f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #0b1c39;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content .left {
+  flex: 4;
+}
+
+.hero-content .right {
+  flex: 2;
+  background-image: url("./images/hero-watch.png");
+  height: 100vh;
+  animation-name: bounce;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.hero-content h1 {
+  font-size: 96px;
+  /* margin-bottom: 30px; */
+}
+
+.hero-content p {
+  line-height: 2rem;
+  margin: 30px 5px;
+}
+
+.hero-content a {
+  line-height: 2rem;
+  background-color: #4a4a4b;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  transition: ease-in 0.2s;
+}
+
+.hero-content a:hover {
+  background-color: #ff2020;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
